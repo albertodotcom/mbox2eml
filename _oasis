@@ -1,0 +1,13 @@
+OASISFormat: 0.4
+Name:        Mbox2Eml
+Version:     1.0
+Synopsis:    Convert mbox 2 eml
+Authors:     Alberto Forni <me@albertoforni.com>
+License:     LGPL-2.1 with OCaml linking exception
+Plugins:     META (0.4), DevFiles (0.4)
+Executable mbox2eml
+  Path:       src
+  BuildTools: ocamlbuild
+  MainIs:     mbox2eml.ml
+  CompiledObject: byte
+  BuildDepends: core, str, threads
